@@ -1,0 +1,56 @@
+.tasks_container{
+    .delete_btn {
+        background-color: red;
+        color: white;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        border: 0px;
+        align-items: center;
+        font-size: 14px;
+    }
+    .tasks-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .tasks-section:last-child{
+        margin-bottom: 15px;
+        border-bottom: 1px solid  #ddd;
+    }
+    .task{
+        min-height: 55px;
+    }
+    .task-state{
+        flex:1;
+        margin-left: 10px;
+    }
+    .task.task-state>div>div>div:nth-child(2) {
+        margin-left: auto;
+        button{
+            background-color: grey;
+            color: white;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            border: 0px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            margin-right: 6px;
+        }
+    }
+    
+    .task-action{
+        margin-left: auto;
+    }
+}
+.create-task {
+     .form-control{
+         width: 60%;
+         display: initial;
+         margin-right: 10px;
+     }
+ }

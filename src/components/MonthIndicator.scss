@@ -1,0 +1,22 @@
+.month-indicator{
+    display: flex;
+    //flex-direction: column;
+   // flex-wrap: wrap;
+   // grid-gap: 5px;
+   // padding: 0 15px;
+   // height: 118px;
+   // width: 50%;
+   .month-indicator-icon{
+        // display: flex;
+        // align-items: center;
+        height: 25px;
+        width: 100px;
+        padding: 15px;
+        cursor: pointer;
+    }
+    .month-sections{
+        //display: flex;
+       // flex-direction: column;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,41 @@
+.calendar-year{
+    display: flex;
+    padding: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+
+    .left-container{
+        
+        width: 25%;
+        .yearInfo{
+            display: flex;
+        }
+        .currentDate{
+            margin-left: 10px;
+            .weekDay{
+                margin-right: 10px;
+            }
+        }
+    }
+    .yearInfo{
+        display: flex;
+    }
+    .currentDate{
+        .weekDay{
+            margin-right: 5px;
+        }
+    }
+    h1{
+        margin: 15px;
+    }
+    .previous {
+        color: black;
+        font-size: 48px;
+        cursor: pointer;
+    }
+    
+    .next {
+        color: black;
+        font-size: 48px;
+        cursor: pointer;
+    }
+}
