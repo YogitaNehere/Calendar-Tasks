@@ -18,7 +18,7 @@ const Calendar = () => {
     const [tasks, setTasks] = useState([]);
     
     useEffect(()=>{
-        //Get tasks details
+        
         let month = getMonth(selectDate) + 1;
         let year = getYear(selectDate);
         let currDate = `${year}-${month}`;
@@ -31,6 +31,7 @@ const Calendar = () => {
         let monthsArr = getMonthsWithFirstDay(selectYear);
         setSelectMonths(monthsArr);
 
+        //Get tasks details
         axios
         .get(API_BASE_URL +'get-all-tasks?dt_task_date='+currDate)
         .then((response) => {
@@ -39,7 +40,7 @@ const Calendar = () => {
         .catch((error) => {
             console.log(error);
         });
-    },[]);
+    },[selectDate, selectYear]);
 
 
     return (
