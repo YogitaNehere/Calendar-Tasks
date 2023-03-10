@@ -118,7 +118,7 @@ const DateIndicator = ({selectDate, setSelectDate, tasks}) => {
     const toggleTrueFalse = () => {
         setShowModal(handleShow);
     }
-    
+
     const datesInMonth = getDatesInMonthDisplay(
         getMonth(selectDate) + 1,
         getYear(selectDate),
@@ -194,8 +194,6 @@ const DateIndicator = ({selectDate, setSelectDate, tasks}) => {
                                             className={`date-icon ${selected} ${MonthColor} ${taskClass}` } //"date-icon" 
                                             data-active-month={i.currentMonth}
                                             data-date={i.date.toString()}
-                                            data-key={key}
-                                            data-tasks={i.taskStatus} 
                                             key={key}
                                             onClick={changeDate}
                                         >
